@@ -1,6 +1,7 @@
 # post_json_app
 
 flutter app with json. we pull data from an api and using it.
+https://jsonplaceholder.typicode.com/posts/ i pulled data here.
 
 ## Getting Started
 
