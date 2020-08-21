@@ -61,6 +61,9 @@ class _PostListState extends State<PostList> {
                 return Center(child: CircularProgressIndicator(),);
               }
               else if(postList.connectionState==ConnectionState.done){
+                if(postList.data==null){
+                  return Center(child: Text("Check Your Connection"),);
+                }
                 // ignore: missing_return
                 /*return GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), itemBuilder: (context, index) {
               return Text(postList.data[index].id.toString());
